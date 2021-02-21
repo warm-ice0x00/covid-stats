@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import numpy
 import pandas as pd
 from matplotlib import pyplot
@@ -79,6 +81,6 @@ ax.spines["right"].set_visible(False)
 ax.spines["top"].set_visible(False)
 ax.set_yticks(y_pos)
 ax.set_yticklabels(rateDict.keys())
-ax.set_title("Cases in Last 14 Days per 100,000 Population")
+ax.set_title("Cases in Last 14 Days per 100,000 Population, " + datetime.utcnow().strftime("%Y-%m-%d"))
 pyplot.legend(loc="best")
 pyplot.savefig("COVID-19.png", dpi=300)
