@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f8f8;
+  font: 18px sans-serif;
+  margin: 8px;
+}
+
+.page {
+  margin: 40px auto;
+  width: 80%;
+}
+
+.title {
+  color: #666;
+  font-size: 24px;
+}
+
+a {
+  border-bottom: 1px dotted #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.chart {
+  font-size: 14px;
+  overflow: auto;
+}
+
+.chart,
+.title {
+  margin: 0 0 40px 0;
+}
+
+.categ {
+  font-weight: normal;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.bar {
+  background-color: orange;
+  height: 1em;
+}
+
+.info {
+  color: #999;
+  line-height: 22px;
+}
+
+#info-start {
+  margin: 0;
+}
+
+.list-in-info {
+  margin: 0 0 20px 1em;
+  padding: 30px 0 0 0;
+}
+
+li {
+  padding: 0 0 10px 0;
+}
+
+a,
+strong {
+  color: #333;
+}
