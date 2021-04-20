@@ -28,7 +28,7 @@ a {
 
 .chart,
 h1 {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
 }
 
 .categ {
@@ -53,11 +53,11 @@ h1 {
 
 .list-in-info {
   margin: 0 0 20px 1em;
-  padding: 30px 0 0 0;
+  padding: 30px 0 0;
 }
 
 li {
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
 }
 
 a,
