@@ -4,9 +4,8 @@ $.ajax({
   url: 'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv',
   dataType: 'text',
   success: function(csv) {
-    var db = [];
-    for (var lines = csv.split('\n'), i = 1; i < lines.length - 1; i++) {
-      db.push(lines[i].split(','));
+    for (var db = [], lns = csv.split('\n'), i = 1; i < lns.length - 1; i++) {
+      db.push(lns[i].split(','));
     }
     var rates = [
       ['Australia', 0],
