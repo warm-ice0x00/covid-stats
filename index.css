@@ -1,5 +1,5 @@
 body {
-  background-color: #f8f8f8;
+  background: #f8f8f8;
   font: 18px sans-serif;
   margin: 8px;
 }
@@ -38,7 +38,7 @@ h1 {
 }
 
 .bar {
-  background-color: orange;
+  background: orange;
   height: 1em;
 }
 
