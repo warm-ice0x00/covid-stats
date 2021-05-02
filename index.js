@@ -27,7 +27,7 @@ $.ajax({
     var last14DRate = function(arr, pop) {
       return (arr[arr.length - 1] - arr[arr.length - 15]) / pop * 1e5;
     };
-    for (var i = 0; i < db.length; i++) {
+    for (i = 0; i < db.length; i++) {
       rates[14][1] += last14DRate(db[i], 7874965732);
       if (db[i][1] === 'Australia') {
         rates[0][1] += last14DRate(db[i], 25788217);
@@ -62,7 +62,7 @@ $.ajax({
     rates.sort(function(a, b) {
       return b[1] - a[1];
     });
-    for (var i = 0; i < 15; i++) {
+    for (i = 0; i < 15; i++) {
       document.getElementById('categ' + i).innerHTML = rates[i][0];
       document.getElementById('bar' + i).style.width =
         rates[i][1] / rates[0][1] * 200 + 'px';
