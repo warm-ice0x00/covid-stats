@@ -65,7 +65,7 @@ $.ajax({
     for (i = 0; i < 15; i++) {
       document.getElementById('categ' + i).innerHTML = rates[i][0];
       document.getElementById('bar' + i).style.width =
-        rates[i][1] / rates[0][1] * 200 + 'px';
+        Math.max(0, rates[i][1] / rates[0][1] * 200 + 'px');
       document.getElementById('data' + i).innerHTML = rates[i][1].toFixed(2);
     }
   },
